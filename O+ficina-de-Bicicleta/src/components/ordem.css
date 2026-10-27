@@ -1,0 +1,76 @@
+.ordem {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-left: 5px solid #3182ce;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  transition: box-shadow 0.2s;
+}
+
+.ordem:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.ordem h3 {
+  font-size: 1.05rem;
+  color: #2d3748;
+  text-transform: capitalize;
+}
+
+.ordem p {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.selo {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: #38a169;
+  color: white;
+  padding: 3px 8px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+.ordem.concluida {
+  border-left-color: #38a169;
+  background-color: #f0fff4;
+}
+
+.ordem.concluida h3,
+.ordem.concluida p {
+  color: #a0aec0;
+  text-decoration: line-through;
+}
+
+.ordem button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: opacity 0.2s;
+}
+
+.ordem button:hover {
+  opacity: 0.9;
+}
+
+.ordem button:first-of-type {
+  background-color: #d69e2e;
+  color: white;
+}
+
+.ordem button:last-of-type {
+  background-color: #e53e3e;
+  color: white;
+}
